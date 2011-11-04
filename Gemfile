@@ -5,6 +5,7 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+gem 'devise'
 gem 'sqlite3'
 
 
@@ -19,7 +20,7 @@ end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -30,3 +31,18 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+
+
+group :cucumber do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'rspec-rails'
+  gem 'spork'
+  gem 'launchy'    # So you can do Then show me the page
+  gem 'culerity'
+end  

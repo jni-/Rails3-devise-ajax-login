@@ -1,0 +1,10 @@
+<div id="user_login_box">
+  <%= form_for("user", :url => user_session_path, :html => {:id => "sign_in"}, :remote => true, :format => :json) do |f| %>
+    <%= f.text_field :email %>
+    <%= f.password_field :password %>
+    <%= f.check_box :remember_me %>
+    <%= f.label :remember_me %>
+    <%= f.submit 'Sign in' %>
+    <%= link_to "Forgot your password?", new_password_path('user') %>
+  <% end %>
+</div>
