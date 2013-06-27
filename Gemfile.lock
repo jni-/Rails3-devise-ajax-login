@@ -174,7 +174,7 @@ DEPENDENCIES
   cucumber-rails
   culerity
   database_cleaner
-  devise
+  devise (~> 2.1)
   factory_girl_rails
   jquery-rails
   launchy
