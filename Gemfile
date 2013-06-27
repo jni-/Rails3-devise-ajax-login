@@ -34,10 +34,8 @@ gem 'bcrypt-ruby'
 group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-end
 
-
-group :cucumber do
+  gem 'cucumber', '~>1.3'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'cucumber-rails'
@@ -45,4 +43,6 @@ group :cucumber do
   gem 'spork'
   gem 'launchy'    # So you can do Then show me the page
   gem 'culerity'
-end  
+  gem 'selenium-webdriver'
+end
+
